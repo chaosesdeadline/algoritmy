@@ -8,7 +8,14 @@ def find_smallest(arr):
         if arr[i] < smallest:
             smallest = arr[i]
             smallest_index = i
-    return f"индекс меньшего элемента: {smallest_index}"
+    return smallest_index
 
-joj = [12, 41, 1]
-print(find_smallest(joj))
+
+def selectionSort(arr):
+    newArr = []
+    for i in range(len(arr)):
+        smallest = find_smallest(arr)
+        newArr.append(arr.pop(smallest))
+    return newArr
+
+print(selectionSort([12, 41, 1]))
