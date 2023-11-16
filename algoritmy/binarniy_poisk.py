@@ -18,6 +18,6 @@ def binary_search(liste, item): # В nеременньх low и high храня�
     return None # Значение не существует
 
 
-my_list = [ 1, 3, 5, 7, 9]
-print(binary_search(my_list, 3))
-print(binary_search(my_list, -1))
+my_list = [1, 3, 5, 7, 9, 10, 84, 901, 5231, 16614, 164667]
+print(binary_search(my_list, 901))
+print(binary_search(my_list, 164667))
